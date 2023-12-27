@@ -1,11 +1,11 @@
 ---
-- name: Backup show run (enable mode commands)
+- name: backup cisco IOS with date stamp
   hosts: all
   gather_facts: false
   connection: network_cli
 
   tasks:
-    - name: run enable level commands
+    - name: show run
       ios_command:
         # authorize: yes
         commands:
